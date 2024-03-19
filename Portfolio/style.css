@@ -1,0 +1,437 @@
+body, html {
+    height: 100%;
+    padding:0;
+}
+.hero-image {
+  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("laptop-img.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+
+.topnav {
+
+    background-color: rgba(0, 0, 0, 0.5); /* Set background color with opacity */
+    position: absolute; /* Position the navbar absolutely */
+    top: 0; /* Align the navbar to the top of the page */
+    left: 0; /* Align the navbar to the left of the page */
+    width: 100%; /* Make the navbar span the entire width of the page */
+    z-index: 999; /* Ensure the navbar appears above other content */
+}
+
+.container1 {
+    padding: 16px;
+    margin: auto;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .profile-picture {
+    position: absolute;
+     margin: calc(50% - 490px) auto 10px; /* Adjust based on profile picture height and desired spacing */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-picture img {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    border-radius: 50%; /* Make the image circular */
+    display: block; /* Ensure the image is centered */
+    margin: 20px auto; /* Adjust spacing from hero text */
+}
+
+
+.hero-text {
+    text-align: center;
+    margin:10px;
+}
+
+.hero-text h1 {
+    font-size: 42px; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Adjust spacing between heading and paragraph */
+}
+
+.hero-text p {
+    font-size: 22px; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Adjust spacing between paragraph and button */
+}
+
+.hero-text button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.hero-text button:hover{
+    transform: scale(1.05);
+}
+/* ----------------------------------------------ABOUT------------------------------------------------------ */
+/* Container styles */
+.container3 {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Add background color with opacity */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+    position: relative; /* Add relative positioning */
+    top: 100px; /* Adjust the top position to move it down */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* About content styles */
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Profile picture styles */
+.profile-pic {
+    flex: 1;
+    margin-right: 15px; /* Adjust spacing between image and text */
+}
+
+.profile-pic img {
+    width: 200px; /* Adjust image size */
+    height: 200px; /* Adjust image size */
+    border-radius: 10px; /* Make it a square with rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* About text styles */
+.about-text {
+    flex: 2;
+    color: #333; /* Set text color */
+}
+
+.about-text h2 {
+    color: #333; /* Set heading color */
+}
+
+.about-text p {
+    line-height: 1.6;
+}
+
+
+
+.hobbies-container {
+    max-width: 960px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Add background color with opacity */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+    position: relative; /* Add relative positioning */
+    top: 100px; /* Adjust the top position to move it down */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Hobbies content styles */
+.hobbies-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hobbies picture styles */
+.hobbies-pic {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.hobbies-pic img {
+    width: 200px; /* Adjust image size */
+    height: 200px; /* Adjust image size */
+    border-radius: 10px; /* Make it a square with rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* Hobbies text styles */
+.hobbies-text {
+    flex: 2;
+}
+
+.hobbies-text h2 {
+    color: #333;
+}
+
+.hobbies-text p {
+    color: #333;
+}
+/* -------------------------------------SKILLS---------------------------------------------------------------- */
+.skills-content {
+    padding: 20px;
+    margin-top: 50px; /* Adjust based on the height of the navigation bar */
+    margin-bottom: 90px; /* Add margin at the bottom to further move it down */
+}
+
+/* Skills text styles */
+.skills-text h2 {
+    color: white;
+    text-align: center;
+}
+
+/* Skills boxes styles */
+.skill-box {
+    flex: 1 0 40%; /* Adjust the flex-basis value to make the boxes longer */
+    background-color: white;
+    padding: 20px;
+    margin: 0 10px 20px; /* Add margin to separate skill boxes */
+    border-radius: 10px;
+    box-sizing: border-box; /* Include padding and border in box dimensions */
+}
+.skill-box:hover {
+    transform: scale(1.05); /* Enlarge the box on hover */
+}
+
+
+.skill-box {
+    flex: 0 1 calc(30% - 20px); /* Adjust width of each box */
+    background-color: white;
+    padding: 20px;
+    margin: 0 10px 20px; /* Add margin to separate skill boxes */
+    border-radius: 10px;
+    box-sizing: border-box; /* Include padding and border in box dimensions */
+    
+}
+
+.skill-box h3 {
+    margin: 0 0 10px; /* Add margin below heading */
+    color: #333;
+    text-align: center;
+    font-size: 20px;
+}
+
+.skill-box p {
+    margin: 0; /* Reset margin for paragraphs */
+    color: #666; /* Adjust text color */
+    font-size: 14px; /* Adjust font size */
+    line-height: 1.5; /* Adjust line height */
+}
+/* -----------------------------------------SERVICES------------------------------------------------------ */
+/* Services section styles */
+.container8 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.services-section {
+    margin-bottom: 50px; /* Increased margin to move the container down */
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.services-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 130%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-signup {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pricing-signup button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-signup button:hover {
+    background-color: darkred;
+}
+/* ------------------------------------------SIGN UP----------------------------------------------------- */
+.container7 {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 30px);
+    
+}
+
+.signup-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px; /* Adjust the maximum width */
+    margin: 0 auto; 
+
+}
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form label {
+    margin-bottom: 10px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Add margin between buttons */
+}
+
+.signup-form button.cancel {
+    background-color: red;
+    color: white;
+    margin-right: 10px;
+}
+
+.signup-form button.submit {
+    background-color: blue;
+    color: white;
+}
+/* ----------------------------------------CONTACT-------------------------------------------------------- */
+/* Contact Form styles */
+.contact-form {
+    flex: 1; /* Take up 50% of the width */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Info styles */
+.contact-info {
+    flex: 1; /* Take up 50% of the width */
+    padding: 50px;
+    
+    
+}
+
+.contact-info h2 {
+    color: yellow;
+    font-size: 90px;
+    font-family: sans-serif;
+}
+
+.contact-info p {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+/* Contact Content Container styles */
+.contact-content {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column; /* Stack columns on smaller screens */
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px;
+    }
+}

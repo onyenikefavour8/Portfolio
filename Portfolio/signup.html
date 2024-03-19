@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="hero-image">
+        <div class="topnav">
+            <div class="container">
+                <a href="home.html">Home</a>
+                <a href="about.html">About me</a>
+                <a href="skills.html">Skills</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact me</a>
+            </div>
+        </div>
+
+        <br>
+        
+        <div class="container7">
+            <div class="signup-container">
+                <h3>Sign Up Form</h3>
+                <form class="signup-form" action="submit.php" method="post" onsubmit="handleSubmit(event)">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button class="cancel" type="reset">Cancel</button>
+                    <button class="submit" type="submit" onclick="handleSubmit(event)">Submit</button>
+                </form>
+            </div>
+        </div>
+
+
+        
+    </div>
+</body>
